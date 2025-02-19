@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Power Plant Dashboard</title>
+    
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Full black background */
+            color: #ff8c00; /* Bright orange default text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #141414; /* Slightly lighter black */
+            color: #00FF7F; /* Neon green text for header */
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1f1f1f; /* Dark navbar */
+            width: 100%;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: #00ffff; /* Shiny blue text */
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff8c00; /* Bright orange on hover */
+            background-color: #333333;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            width: 80%;
+        }
+
+        .card {
+            background-color: #1b1b1b; /* Dark card background */
+            color: #ff8c00; /* Bright orange text */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            margin: 15px;
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #00FF7F; /* Neon green for headings */
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #00ffff; /* Shiny blue for values */
+        }
+
+        #alert {
+            background-color: #ff4500; /* Bright red alert */
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            display: none; /* Hidden initially */
+        }
+
+        button {
+            background-color: #1e90ff; /* Shiny blue for buttons */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            font-weight: bold;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff8c00; /* Change to bright orange on hover */
+            box-shadow: 0px 0px 10px #ff8c00;
+        }
+
+        /* Additional button for Crack Detection */
+        #crackDetectionBtn {
+            background-color: #00FF7F; /* Neon green */
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1em;
+        }
+        #crackDetectionBtn:hover {
+            background-color: #1e90ff; /* Shiny blue on hover */
+            box-shadow: 0px 0px 10px #1e90ff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #ff8c00;">AIML-Based Optimization & Integrity of Hydro Power Plant</h1>
+        <h2 style="color: #00FF7F;">Hydro Power Plant Dashboard</h2>
+    </header>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>        
+        <a href="dash.html">Dashboard</a>
+        <a href="crack.html">Crack Detection</a>
+        <a href="map.html">Map System</a>
+        <a href="#surveillance">Surveillance</a>
+    </nav> 
+
+    <div class="container">
+        <div class="card">
+            <h1>MAP</h1>
+            <!-- Google Map Embed -->
+            <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3888.174881129652!2d80.05488582475967!3d12.960658845666618!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f596c7fb72c9%3A0x8e7a30529f9ef227!2sSri%20Sairam%20Engineering%20College!5e0!3m2!1sen!2sin!4v1732567704651!5m2!1sen!2sin"
+            width="450" 
+            height="600" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="map.js"></script>
+</body>
+</html>
